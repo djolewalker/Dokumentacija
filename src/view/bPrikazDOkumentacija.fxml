@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="825.0" prefWidth="1121.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.cPrikazDokumentacija">
+    <children>
+      <Label layoutX="278.0" layoutY="47.0" text="PRIKAZ DOKUMENTACIJE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <VBox fx:id="vbBodSis" alignment="CENTER" layoutX="190.0" layoutY="140.0" onMouseClicked="#prikaziBodSis" prefHeight="314.0" prefWidth="304.0">
+         <children>
+            <Label prefHeight="38.0" prefWidth="187.0" text="Bodovni sistemi" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="273.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@picsrc/ranking.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox fx:id="vbSisNag" alignment="CENTER" layoutX="606.0" layoutY="140.0" onMouseClicked="#prikaziSisNag" prefHeight="314.0" prefWidth="304.0">
+         <children>
+            <Label prefHeight="38.0" prefWidth="187.0" text="Sistemi nagrada" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="273.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@picsrc/prize.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox fx:id="vbKazSis" alignment="CENTER" layoutX="188.0" layoutY="478.0" onMouseClicked="#prikaziSisKaz" prefHeight="314.0" prefWidth="304.0">
+         <children>
+            <Label prefHeight="38.0" prefWidth="227.0" text="Kazneni sistemi  " textAlignment="JUSTIFY">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="273.0" fitWidth="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@picsrc/penalty.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox fx:id="vbDokumentacija" alignment="CENTER" layoutX="606.0" layoutY="478.0" onMouseClicked="#prikaziDokumentaciju" prefHeight="314.0" prefWidth="304.0">
+         <children>
+            <Label prefHeight="38.0" prefWidth="187.0" text="Dokumentacija" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="273.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@picsrc/document.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

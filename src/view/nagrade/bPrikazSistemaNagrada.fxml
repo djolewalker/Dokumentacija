@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.cPartialNagrade">
+   <children>
+      <Label layoutX="186.0" layoutY="29.0" prefHeight="73.0" prefWidth="439.0" text="SISTEMI NAGRADA">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="twSistemi" layoutX="184.0" layoutY="120.0" prefHeight="438.0" prefWidth="439.0">
+        <columns>
+          <TableColumn fx:id="tcNazivSistema" editable="false" prefWidth="438.0" resizable="false" sortable="false" text="NAZIV" />
+        </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Button fx:id="btKreirajSistem" layoutX="184.0" layoutY="592.0" mnemonicParsing="false" onAction="#pokreniFormuKreirajSistem" text="KREIRAJ SISTEM">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btDetalji" layoutX="496.0" layoutY="592.0" mnemonicParsing="false" onAction="#pokreniFormuDeatljiSistema" text="DETALJI">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
